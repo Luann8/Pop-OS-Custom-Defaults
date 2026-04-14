@@ -1,18 +1,23 @@
 <h1>🚀 COSMIC & Pop!_OS Custom Setup</h1>
 
 <p>
-Script de automação para substituir os aplicativos padrão do sistema por alternativas mais robustas e produtivas.
+Automatize a substituição dos aplicativos padrão do sistema por alternativas mais produtivas, com correção de associações MIME e melhoria visual.
 </p>
 
-<h2>⚡ O que este projeto faz?</h2>
+<hr>
+
+<h2>⚡ Funcionalidades</h2>
 <ul>
-  <li>Define o <strong>Nemo</strong> como gerenciador de arquivos padrão.</li>
-  <li>Define o <strong>Ark</strong> como utilitário de compressão padrão.</li>
-  <li>Corrige associações MIME ignoradas pelo COSMIC.</li>
-  <li>Padroniza comportamento de abertura de diretórios e arquivos compactados.</li>
+  <li>📁 Define o <strong>Nemo</strong> como gerenciador de arquivos padrão</li>
+  <li>📦 Define o <strong>Ark</strong> como utilitário de compactação padrão</li>
+  <li>🧩 Corrige associações MIME ignoradas pelo COSMIC</li>
+  <li>🎯 Padroniza a abertura de diretórios e arquivos compactados</li>
+  <li>🎨 Aplica tema de ícones moderno (<strong>Kora</strong>)</li>
 </ul>
 
-<h2>💻 Script de Instalação</h2>
+<hr>
+
+<h2>💻 Instalação</h2>
 
 <p>Crie o arquivo <code>setup.sh</code>:</p>
 
@@ -22,16 +27,17 @@ Script de automação para substituir os aplicativos padrão do sistema por alte
 echo "📦 Atualizando sistema..."
 sudo apt update
 
-echo "📦 Instalando apps..."
-sudo apt install -y nemo ark
+echo "📦 Instalando aplicações..."
+sudo apt install -y nemo ark kora-icon-theme
 
 echo "⚙️ Configurando Nemo como padrão..."
 xdg-mime default nemo.desktop inode/directory
-gsettings set org.gnome.desktop.background show-desktop-icons false
 
 echo "⚙️ Configurando Ark como padrão..."
 xdg-mime default org.kde.ark.desktop application/zip
 xdg-mime default org.kde.ark.desktop application/x-rar
+
+echo "🎨 Tema Kora instalado (aplicar manualmente)"
 
 echo "🔄 Reiniciando serviços..."
 killall nautilus 2>/dev/null
@@ -39,57 +45,69 @@ killall nautilus 2>/dev/null
 echo "✅ Setup finalizado com sucesso!"
 </pre>
 
-<h2>▶️ Como executar</h2>
+<hr>
+
+<h2>▶️ Execução</h2>
 
 <pre>
 chmod +x setup.sh
 ./setup.sh
 </pre>
 
-<h2>🎨 Tema de Ícones (Papirus)</h2>
+<hr>
 
-<p>Instale para um visual mais moderno:</p>
-
-<pre>
-sudo add-apt-repository ppa:papirus/papirus -y
-sudo apt update
-sudo apt install papirus-icon-theme -y
-</pre>
-
-<h2>🛠 Aplicar visual</h2>
+<h2>🎨 Aplicar tema de ícones (Kora)</h2>
 
 <ol>
   <li>Abrir <strong>Gnome Tweaks</strong></li>
-  <li>Ir em <strong>Aparência</strong></li>
-  <li>Selecionar <strong>Papirus</strong> em Ícones</li>
+  <li>Acessar <strong>Aparência</strong></li>
+  <li>Selecionar <strong>Kora</strong> em Ícones</li>
 </ol>
 
-<h2>📌 Pós-instalação (IMPORTANTE)</h2>
+<hr>
+
+<h2>📌 Pós-configuração</h2>
 
 <ul>
-  <li>Desafixar o gerenciador antigo da Dock</li>
-  <li>Fixar o Nemo manualmente</li>
-  <li>Reiniciar sessão (logout/login)</li>
+  <li>Remover o gerenciador de arquivos antigo da Dock</li>
+  <li>Fixar o <strong>Nemo</strong> manualmente</li>
+  <li>Reiniciar a sessão (logout/login)</li>
 </ul>
 
-<h2>♻️ Como reverter</h2>
+<hr>
+
+<h2>♻️ Reversão (opcional)</h2>
 
 <pre>
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
 xdg-mime default file-roller.desktop application/zip
 </pre>
 
+<hr>
+
 <h2>⚠️ Observações</h2>
 
 <ul>
-  <li>O COSMIC pode sobrescrever associações após atualizações</li>
-  <li>Recomenda-se rodar o script novamente se necessário</li>
+  <li>O COSMIC pode sobrescrever configurações após atualizações</li>
+  <li>Recomenda-se reexecutar o script se necessário</li>
+</ul>
+
+<hr>
+
+<h2>🎯 Resultado esperado</h2>
+
+<ul>
+  <li>Interface mais limpa e consistente</li>
+  <li>Melhor experiência com gerenciamento de arquivos</li>
+  <li>Integração visual aprimorada com o sistema</li>
 </ul>
 
 <hr>
 
 <p align="center">
-  💻 Feito para produtividade no Linux
+💻 Setup focado em produtividade no Linux
 </p>
 
-<a href="#" class="btn">⭐ Star no GitHub</a>
+<p align="center">
+<a href="#">⭐ Star no GitHub</a>
+</p>
