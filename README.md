@@ -2,10 +2,16 @@
 <p align="left">
   <img src="https://img.shields.io/badge/-Pop!_OS-48B9C7?style=for-the-badge&logo=popos&logoColor=white" />
   <img src="https://img.shields.io/badge/-COSMIC-4B6BFB?style=for-the-badge&logo=system76&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Fish-000000?style=for-the-badge&logo=fishshell&logoColor=white" />
-  <img src="https://img.shields.io/badge/-WezTerm-000000?style=for-the-badge&logo=wezterm&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white" />
+  
+  <img src="https://img.shields.io/badge/-WezTerm-333333?style=for-the-badge&logo=wezterm&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Fish-D35400?style=for-the-badge&logo=fishshell&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
+
+  <img src="https://img.shields.io/badge/-Nemo-2C3E50?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Kora_Icons-7F8C8D?style=for-the-badge&logo=sensu&logoColor=white" />
+  
+  <img src="https://img.shields.io/badge/Linux-E95420?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Custom-FFD700?style=for-the-badge&logo=protodotio&logoColor=black" />
 </p>
 
 <p>
