@@ -1,5 +1,13 @@
 <h1>🚀 COSMIC & Pop!_OS Custom Setup</h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/OS-Pop!_OS-orange?style=for-the-badge&logo=linux" />
+  <img src="https://img.shields.io/badge/Desktop-COSMIC-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Shell-Bash-black?style=for-the-badge&logo=gnubash" />
+  <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</p>
+
 <p>
 Automatize a substituição dos aplicativos padrão do sistema por alternativas mais produtivas, com correção de associações MIME e melhoria visual.
 </p>
@@ -105,9 +113,5 @@ xdg-mime default file-roller.desktop application/zip
 <hr>
 
 <p align="center">
-💻 Setup focado em produtividade no Linux
-</p>
-
-<p align="center">
-<a href="#">⭐ Star no GitHub</a>
+🐧 Setup focado em Linux
 </p>
