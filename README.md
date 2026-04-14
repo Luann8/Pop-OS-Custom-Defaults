@@ -7,11 +7,10 @@
   <img src="https://img.shields.io/badge/-Fish-D35400?style=for-the-badge&logo=fishshell&logoColor=white" />
   <img src="https://img.shields.io/badge/-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
 
-  <img src="https://img.shields.io/badge/-Nemo-2C3E50?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Kora_Icons-7F8C8D?style=for-the-badge&logo=sensu&logoColor=white" />
+<img src="https://img.shields.io/badge/-Nemo-2C3E50?style=for-the-badge&logo=files&logoColor=white" /> 
+<img src="https://img.shields.io/badge/-Kora_Icons-7F8C8D?style=for-the-badge&logo=sensu&logoColor=white" />
   
   <img src="https://img.shields.io/badge/Linux-E95420?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Custom-FFD700?style=for-the-badge&logo=protodotio&logoColor=black" />
 </p>
 
 <p>
