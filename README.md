@@ -1,13 +1,15 @@
 <h1>🚀 COSMIC & Pop!_OS Custom Setup</h1>
 <p align="left">
   <img src="https://img.shields.io/badge/-Pop!_OS-48B9C7?style=for-the-badge&logo=popos&logoColor=white" />
- <img src="https://img.shields.io/badge/-COSMIC-4B6BFB?style=for-the-badge&logo=system76&logoColor=white" />
+  <img src="https://img.shields.io/badge/-COSMIC-4B6BFB?style=for-the-badge&logo=system76&logoColor=white" />
   <img src="https://img.shields.io/badge/-Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Fish-000000?style=for-the-badge&logo=fishshell&logoColor=white" />
+  <img src="https://img.shields.io/badge/-WezTerm-000000?style=for-the-badge&logo=wezterm&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white" />
 </p>
 
 <p>
-Automatize a substituição dos aplicativos padrão do sistema por alternativas mais produtivas, com correção de associações MIME e melhoria visual.
+Automatize a substituição dos aplicativos padrão do sistema por alternativas mais produtivas, com correção de associações MIME, melhoria visual e um terminal moderno com shell avançado.
 </p>
 
 <hr>
@@ -19,6 +21,8 @@ Automatize a substituição dos aplicativos padrão do sistema por alternativas 
   <li>🧩 Corrige associações MIME ignoradas pelo COSMIC</li>
   <li>🎯 Padroniza a abertura de diretórios e arquivos compactados</li>
   <li>🎨 Aplica tema de ícones moderno (<strong>Kora</strong>)</li>
+  <li>🐟 Instala e configura o <strong>Fish Shell</strong></li>
+  <li>🖥️ Instala o <strong>WezTerm</strong> como terminal moderno</li>
 </ul>
 
 <hr>
@@ -34,7 +38,7 @@ echo "📦 Atualizando sistema..."
 sudo apt update
 
 echo "📦 Instalando aplicações..."
-sudo apt install -y nemo ark kora-icon-theme
+sudo apt install -y nemo ark kora-icon-theme fish wezterm
 
 echo "⚙️ Configurando Nemo como padrão..."
 xdg-mime default nemo.desktop inode/directory
@@ -42,6 +46,9 @@ xdg-mime default nemo.desktop inode/directory
 echo "⚙️ Configurando Ark como padrão..."
 xdg-mime default org.kde.ark.desktop application/zip
 xdg-mime default org.kde.ark.desktop application/x-rar
+
+echo "🐟 Definindo Fish como shell padrão..."
+chsh -s $(which fish)
 
 echo "🎨 Tema Kora instalado (aplicar manualmente)"
 
@@ -62,6 +69,25 @@ chmod +x setup.sh
 
 <hr>
 
+<h2>🖥️ Configurar WezTerm</h2>
+
+<p>Arquivo de configuração:</p>
+
+<pre>
+mkdir -p ~/.config/wezterm
+nano ~/.config/wezterm/wezterm.lua
+</pre>
+
+<pre>
+return {
+  default_prog = { "/usr/bin/fish" },
+  font_size = 12.0,
+  color_scheme = "Dracula",
+}
+</pre>
+
+<hr>
+
 <h2>🎨 Aplicar tema de ícones (Kora)</h2>
 
 <ol>
@@ -77,6 +103,7 @@ chmod +x setup.sh
 <ul>
   <li>Remover o gerenciador de arquivos antigo da Dock</li>
   <li>Fixar o <strong>Nemo</strong> manualmente</li>
+  <li>Definir o <strong>WezTerm</strong> como terminal padrão</li>
   <li>Reiniciar a sessão (logout/login)</li>
 </ul>
 
@@ -85,6 +112,7 @@ chmod +x setup.sh
 <h2>♻️ Reversão (opcional)</h2>
 
 <pre>
+chsh -s /bin/bash
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
 xdg-mime default file-roller.desktop application/zip
 </pre>
@@ -104,12 +132,13 @@ xdg-mime default file-roller.desktop application/zip
 
 <ul>
   <li>Interface mais limpa e consistente</li>
-  <li>Melhor experiência com gerenciamento de arquivos</li>
+  <li>Terminal moderno e performático</li>
+  <li>Shell mais produtivo com autocomplete avançado</li>
   <li>Integração visual aprimorada com o sistema</li>
 </ul>
 
 <hr>
 
 <p align="center">
-🐧 Setup focado em Linux
+🐧 Setup focado em Linux + produtividade extrema
 </p>
