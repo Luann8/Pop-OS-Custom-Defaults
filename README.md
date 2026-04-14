@@ -1,7 +1,7 @@
 <h1>🚀 COSMIC & Pop!_OS Custom Setup</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OS-Pop!_OS-blue?style=for-the-badge&logo=Popos" />
+  <img src="https://img.shields.io/badge/OS-Pop!-blue?style=for-the-badge&logo=Popos" />
   <img src="https://img.shields.io/badge/Desktop-COSMIC-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Shell-Bash-black?style=for-the-badge&logo=gnubash" />
   <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge" />
